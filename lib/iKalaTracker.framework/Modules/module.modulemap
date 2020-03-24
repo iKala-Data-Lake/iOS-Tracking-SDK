@@ -1,0 +1,11 @@
+framework module iKalaTracker {
+  umbrella header "iKalaTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module iKalaTracker.Swift {
+    header "iKalaTracker-Swift.h"
+    requires objc
+}

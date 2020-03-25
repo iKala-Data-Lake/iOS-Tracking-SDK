@@ -1,0 +1,82 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Components/Hits+CoreDataClass.swift",
+      "line": 13,
+      "symbol": "Hits",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Hit/Hit.swift",
+      "line": 11,
+      "symbol": "Hit",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Hit/Hit.swift",
+      "line": 77,
+      "symbol": "Hit",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Hit/Page.swift",
+      "line": 11,
+      "symbol": "Page",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Required Params/AppInfo.swift",
+      "line": 13,
+      "symbol": "AppInfo",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Required Params/Device.swift",
+      "line": 13,
+      "symbol": "Device",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Required Params/Traffic.swift",
+      "line": 11,
+      "symbol": "Traffic",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Required Params/User.swift",
+      "line": 11,
+      "symbol": "User",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Tracker.swift",
+      "line": 13,
+      "symbol": "iKalaAPIError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/Tracker.swift",
+      "line": 385,
+      "symbol": "Tracker.setTraffic(traffic:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allenandkim/development/repos/ikalatracker/iKalaTracker/Classes/TrackerMode.swift",
+      "line": 10,
+      "symbol": "TrackerMode",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/allenandkim/development/repos/ikalatracker"
+}

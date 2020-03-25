@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>iKalaTracker  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="iKalaTracker  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">iKalaTracker Docs</a> (84% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">iKalaTracker Reference</a>
+        <img id="carat" src="img/carat.png" />
+        iKalaTracker  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Tracker.html">Tracker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/EventName.html">EventName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EventParam.html">EventParam</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionName.html">TransactionName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TransactionParam.html">TransactionParam</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='ikalatracker' class='heading'>iKalaTracker</h1>
+<h2 id='getting-started' class='heading'>Getting Started</h2>
+
+<p>This section shows how to start using iKala BDL iOS SDK. Before reading this section, make sure you have read this <a href="https://github.com/iKala-Data-Lake/iOS-Tracking-SDK/wiki/Getting-started">Getting Started Document</a> first to have the basic understanding about iKala BDL tracking SDK.</p>
+<h2 id='add-ikala-bdl-tracking-sdk-to-your-app' class='heading'>Add iKala BDL Tracking SDK to Your App</h2>
+
+<p>This section shows you how to add iKala BDL tracking SDK to your app.</p>
+
+<p>iKalaTracker is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight plaintext"><code>pod 'iKalaTracker'
+</code></pre>
+
+<p>For <code>AppDelegate</code> import this SDK:</p>
+<pre class="highlight plaintext"><code>import iKalaTracker
+</code></pre>
+
+<p>and method <code>didFinishLaunchingWithOptions</code> add this Code:</p>
+<pre class="highlight plaintext"><code>Tracker.shared.configure()
+</code></pre>
+
+<p>When you set <a href="https://ikala-data-lake.github.io/iOS-Tracking-SDK/docs/Classes/Tracker.html#/s:12iKalaTracker0B0C9configureyyFZ">Tracker.shared.configure()</a> in <code>AppDelegate</code>, it will trigger the page to automatically detect the submission mechanism. </p>
+<h2 id='set-ikaid' class='heading'>Set ikaid</h2>
+
+<p>After adding iKala BDL tracking SDK, you should set <a href="https://github.com/iKala-Data-Lake/iOS-Tracking-SDK/wiki/Getting-started#set-ikaid">ikaid</a> in your project. See this page for more information about ikaid and how to get your ikaid.</p>
+
+<p>The following section shows how to set <a href="https://github.com/iKala-Data-Lake/iOS-Tracking-SDK/wiki/Getting-started#set-ikaid">ikaid</a> in your project:</p>
+
+<p>Set ikaid in the Info.plist with key <a href="https://github.com/iKala-Data-Lake/iOS-Tracking-SDK/wiki/Getting-started#set-ikaid">ikaid</a></p>
+<pre class="highlight plaintext"><code>&lt;key&gt;ikaid&lt;/key&gt;
+&lt;string&gt;Your ikala id&lt;/string&gt;
+</code></pre>
+<h2 id='auto-tracking-configuration' class='heading'>Auto Tracking Configuration</h2>
+
+<p>By default, iKala BDL tracking SDK tracks where Activity the end users are automatically. You can disable <a href="https://ikala-data-lake.github.io/iOS-Tracking-SDK/docs/Classes/Tracker.html#/s:12iKalaTracker0B0C28isAutoLogActivityPageEnabledSbvpZ">isAutoLogActivityPageEnabled</a> if you want to do it by yourself:</p>
+<pre class="highlight plaintext"><code>Tracker.shared.isAutoLogActivityPageEnabled = false
+</code></pre>
+<h2 id='start-using-ikala-bdl-tracking-sdk' class='heading'>Start Using iKala BDL Tracking SDK</h2>
+<h3 id='instance' class='heading'>Instance</h3>
+
+<p>Tracker entity can be obtained using Tracker.shared</p>
+<pre class="highlight plaintext"><code>try! Tracker.shared.addEvent(name: .searchWord, params:[:])
+</code></pre>
+
+<p>or</p>
+<pre class="highlight plaintext"><code>let tracker: Tracker = Tracker.shared
+try! tracker.addEvent(name: .searchWord, params:[:])
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://big-data-lake.github.io/BDL-document/" target="_blank" rel="external">iKala</a>. All rights reserved. (Last updated: 2020-03-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

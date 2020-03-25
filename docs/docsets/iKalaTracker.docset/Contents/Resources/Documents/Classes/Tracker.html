@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tracker Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Tracker" class="dashAnchor"></a>
+    <a title="Tracker Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">iKalaTracker Docs</a> (84% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">iKalaTracker Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Tracker Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Tracker.html">Tracker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EventName.html">EventName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventParam.html">EventParam</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionName.html">TransactionName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionParam.html">TransactionParam</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Tracker</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Tracker</span></code></pre>
+
+                </div>
+              </div>
+            <p>Tracker is used track events in your app. You can use Tracker to send hits like Event, Transaction, and PageView to iKala server.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C28isAutoLogActivityPageEnabledSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/isAutoLogActivityPageEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C28isAutoLogActivityPageEnabledSbvpZ">isAutoLogActivityPageEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets if the switch of viewController if auto logged. The default is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isAutoLogActivityPageEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C9configureyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/configure()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C9configureyyFZ">configure()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tracker Initialize Config</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the instance of Tracker</p>
+
+<p>@return a Tracker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">Tracker</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C9setUserId04userE0ySSSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/setUserId(userId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C9setUserId04userE0ySSSg_tF">setUserId(userId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets id of the end user. The user id will be attached in the following hits.</p>
+
+<p>@param userId user id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setUserId</span><span class="p">(</span><span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C8addEvent4name6paramsyAA0D4NameO_SDySSypGtKF"></a>
+                    <a name="//apple_ref/swift/Method/addEvent(name:params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C8addEvent4name6paramsyAA0D4NameO_SDySSypGtKF">addEvent(name:params:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an event. This event will be sent to iKala server in appropriate time.</p>
+
+<p>@param name Please refer EventName
+  @param params The parameters of the event, only the parameters which are corresponding to the specified EventName and have the right type will be added in this event. Please refer EventParam.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addEvent</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt"><a href="../Enums/EventName.html">EventName</a></span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C14addTransaction4name6paramsyAA0D4NameO_SDySSypGtKF"></a>
+                    <a name="//apple_ref/swift/Method/addTransaction(name:params:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C14addTransaction4name6paramsyAA0D4NameO_SDySSypGtKF">addTransaction(name:params:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a transaction. This transaction will be sent to iKala server in appropriate time.</p>
+
+<p>@param name please refer TransactionName
+@param params the parameters of the event, only the parameters which are corresponding to the specified TransactionName and have the right type will be added in this event. Please refer TransactionParam</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTransaction</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransactionName.html">TransactionName</a></span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12iKalaTracker0B0C14setCurrentPage9className5titleySS_SSSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/setCurrentPage(className:title:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12iKalaTracker0B0C14setCurrentPage9className5titleySS_SSSgtKF">setCurrentPage(className:title:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a transaction. This transaction will be sent to iKala server in appropriate time.</p>
+
+<p>@param className the class name of current page, this is corresponding to the URL path of pageview
+@param title the title of current page</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setCurrentPage</span><span class="p">(</span><span class="nv">className</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://big-data-lake.github.io/BDL-document/" target="_blank" rel="external">iKala</a>. All rights reserved. (Last updated: 2020-03-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

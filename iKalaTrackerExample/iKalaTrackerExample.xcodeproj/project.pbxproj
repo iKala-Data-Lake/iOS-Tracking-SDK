@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646ABBD351AF08B1D84FC31B /* Pods_iKalaTrackerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B71A066FE75A2EEB910914 /* Pods_iKalaTrackerExample.framework */; };
 		FF0EB790242C970500980384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0EB78F242C970500980384 /* AppDelegate.swift */; };
 		FF0EB792242C970500980384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0EB791242C970500980384 /* SceneDelegate.swift */; };
 		FF0EB794242C970500980384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0EB793242C970500980384 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B619F85F5402ED67ED1D99 /* Pods-iKalaTrackerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKalaTrackerExample.release.xcconfig"; path = "Target Support Files/Pods-iKalaTrackerExample/Pods-iKalaTrackerExample.release.xcconfig"; sourceTree = "<group>"; };
+		8948AEFE7E19FAF494EB066A /* Pods-iKalaTrackerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iKalaTrackerExample.debug.xcconfig"; path = "Target Support Files/Pods-iKalaTrackerExample/Pods-iKalaTrackerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A5B71A066FE75A2EEB910914 /* Pods_iKalaTrackerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iKalaTrackerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0EB78C242C970500980384 /* iKalaTrackerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKalaTrackerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0EB78F242C970500980384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF0EB791242C970500980384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646ABBD351AF08B1D84FC31B /* Pods_iKalaTrackerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9F5F7E38037E446FC97D447 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8948AEFE7E19FAF494EB066A /* Pods-iKalaTrackerExample.debug.xcconfig */,
+				37B619F85F5402ED67ED1D99 /* Pods-iKalaTrackerExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF4FD38A96145A071072339B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5B71A066FE75A2EEB910914 /* Pods_iKalaTrackerExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF0EB783242C970400980384 = {
 			isa = PBXGroup;
 			children = (
 				FF0EB78E242C970500980384 /* iKalaTrackerExample */,
 				FF0EB78D242C970500980384 /* Products */,
+				D9F5F7E38037E446FC97D447 /* Pods */,
+				EF4FD38A96145A071072339B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF0EB7A0242C970500980384 /* Build configuration list for PBXNativeTarget "iKalaTrackerExample" */;
 			buildPhases = (
+				77A61FDFB57FAD10015506A9 /* [CP] Check Pods Manifest.lock */,
 				FF0EB788242C970500980384 /* Sources */,
 				FF0EB789242C970500980384 /* Frameworks */,
 				FF0EB78A242C970500980384 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77A61FDFB57FAD10015506A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iKalaTrackerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF0EB788242C970500980384 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		FF0EB7A1242C970500980384 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8948AEFE7E19FAF494EB066A /* Pods-iKalaTrackerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		FF0EB7A2242C970500980384 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B619F85F5402ED67ED1D99 /* Pods-iKalaTrackerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iKalaTracker
 
 class ViewController: UIViewController {
 

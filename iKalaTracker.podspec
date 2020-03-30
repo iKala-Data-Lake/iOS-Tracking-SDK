@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'iKalaTracker'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'iKala Tracker'
 
   s.description      = 'A SDK to tracker what user do for analysis.'

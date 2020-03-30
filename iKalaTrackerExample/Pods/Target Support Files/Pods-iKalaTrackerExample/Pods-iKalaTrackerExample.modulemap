@@ -1,6 +1,0 @@
-framework module Pods_iKalaTrackerExample {
-  umbrella header "Pods-iKalaTrackerExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
